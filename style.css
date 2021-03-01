@@ -1,0 +1,79 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*{box-sizing: border-box;}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+
+/* COMMON */
+body{font-family: 'Roboto', sans-serif; color: #2d2d2d;}
+a{color: inherit; text-decoration: none;}
+
+.container{width: 1200px; margin: 0 auto;}
+
+/* FLOAT & CLEARFIX */
+.float--left{float: left;}
+.float--right{float: right;}
+.clearfix::after{content: ''; clear: both; display: block;}
+
+/* TOP */
+.top{padding: 10px 0; border-bottom: 1px solid  #e6e6e6; font-size: 12px;}
+.top .top--left{font-weight: bold; line-height: 16px; letter-spacing: 1.1px;}
+.top .top--right{display: flex; color: #656969; line-height: 16px;}
+.top .top--right li{padding-left: 18px;}
+
+.top .top--right li:nth-child(2){position: relative;}
+.top .top--right li:nth-child(2) div{display: flex; flex-direction: column; width: 56px; height: 20px; margin-left: -30px; position: absolute; left: 43px; font-size: 10px; color: #49b182; text-align: center; animation: up-down 2s ease-in-out infinite;}
+.top .top--right li:nth-child(2) em{padding:0 3px; position: absolute; top: 11px; left: 6px; background-color: #49b182; border-radius: 4px; color: #fff;}
+
+@keyframes up-down{
+	0%{transform: translateY(-5px);}
+	50%{transform: translateY(0px);}
+	100%{transform: translateY(-5px);}
+}
+
+/* TOP LOGO */
+.top-logo a{display: flex; flex-direction: column; justify-content: center; align-items: center; height: 90px; margin-top: 16px; padding: 10px 0;}
+.top-logo h1{font-size: 45px; letter-spacing: 8px;}
+.top-logo h2{font-size: 11px; letter-spacing: 3px;}
+
+/* HEADER */
+header{font-family: 'Noto Sans KR', sans-serif;}
+header .container{margin-top: 24px; position: relative;}
+
+header .header--button{width: 23px; height: 22px; position: absolute; top: 50%; transform: translateY(-50%); cursor: pointer;}
+header .header--button span{display: block; width: 100%; height: 2px; position: absolute; background-color: #2d2d2d;}
+header .header--button span:nth-child(1){top: 0;}
+header .header--button span:nth-child(2){top: 8px;}
+header .header--button span:nth-child(3){top: 16px;}
+
+header .header--menu{display: flex; margin-left: 56px;}
+header .header--menu li{width: 138px; height: 47px; padding: 0 10px; text-align: center;}
+header .header--menu li a{line-height: 47px;}
+
