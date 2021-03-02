@@ -77,3 +77,22 @@ header .header--menu{display: flex; margin-left: 56px;}
 header .header--menu li{width: 138px; height: 47px; padding: 0 10px; text-align: center;}
 header .header--menu li a{line-height: 47px;}
 
+header .header--search{display: flex; height: 47px; padding-top: 10px;}
+header .header--search .search{display: flex; height: 30px; padding-right: 20px;}
+header .header--search .search input{width: 168px; height: 100%; border: none; border-bottom: 1px solid #2d2d2d; outline: none; font-size: 14px; text-indent: 5px;}
+header .header--search .search i{height: 100%; border-bottom: 1px solid #2d2d2d; font-size: 20px; cursor: pointer;}
+header .header--search > a > i{padding-right: 20px; font-size: 20px;}
+
+/* EVENT SECTION */
+section.event{position: relative; overflow: hidden;}
+section.event .event--items{width: 300vw; height: 590px; margin-top: 10px;}
+section.event .event--items .event-item{width: 100vw; height: 100%; font-size: 80px; color: #2d2d2d; line-height: 590px; text-align: center; float: left;}
+section.event .event--items .event-item:nth-child(1){background-color: cadetblue;}
+section.event .event--items .event-item:nth-child(2){background-color: blanchedalmond;}
+section.event .event--items .event-item:nth-child(3){background-color: coral;}
+
+section.event .event--buttons{width: 100vw; padding: 0 150px; position: absolute; top: 50%; transform: translateY(-50%); font-size: 40px; color: #2d2d2d;}
+section.event .event--buttons i{cursor: pointer;}
+
+section.event .event--order{display: flex; justify-content: space-between; width: 110px; position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%);}
+section.event .event--order div{width: 30px; height: 4px; background-color: #7a7a7a; cursor: pointer;}
